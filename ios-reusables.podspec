@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-
+  spec.platform     = :ios
   spec.name         = "ios-reusables"
   spec.version      = "0.0.2"
   spec.summary      = "A CocoaPods library written in Swift"
@@ -12,7 +12,7 @@ This CocoaPods libary contains components.
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author = { "Vision Mkhabela" => "shivonomkhabela@gmail.com" }
 
-  spec.ios.deployment_target = "12.1"
+  spec.ios.deployment_target = "10.7"
   spec.swift_version = "5.0"
 
   spec.source = { :git => "https://github.com/WepeCode/ios-reusables.git", :tag => "#{spec.version}"}

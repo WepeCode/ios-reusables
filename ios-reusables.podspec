@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
    s.platform = :ios
-   s.ios.deployment_target = '10.7'
+   s.ios.deployment_target = '11.1'
    s.name = "ios-reusables"
    s.summary = "A vast library of ios ui components."
    s.requires_arc = true
@@ -20,8 +20,6 @@ Pod::Spec.new do |s|
    s.framework = "UIKit"
 
    s.source_files = 'ios-reusables/**/*.{h,m,swift}'
-   s.resources = 'ios-reusables/**/*.{storyboard}'
    s.requires_arc  = false
 
 end
-

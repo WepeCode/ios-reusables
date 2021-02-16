@@ -15,7 +15,9 @@ This CocoaPods libary contains components.
   spec.ios.deployment_target = "10.7"
   spec.swift_version = "5.0"
 
-  spec.source = { :git => "https://github.com/WepeCode/ios-reusables.git", :tag => "#{spec.version}"}
+  spec.source = { :git => "https://github.com/WepeCode/ios-reusables.git",
+                  :tag => "#{spec.version}"}
+  
   spec.source_files  = "ios-reusables/**/*.{h,m,swift}"
 
 end

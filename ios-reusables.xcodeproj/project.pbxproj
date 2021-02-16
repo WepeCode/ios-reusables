@@ -10,6 +10,7 @@
 		402AB83525DBEBC90044AB00 /* ios_reusables.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402AB82B25DBEBC90044AB00 /* ios_reusables.framework */; };
 		402AB83A25DBEBC90044AB00 /* ios_reusablesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402AB83925DBEBC90044AB00 /* ios_reusablesTests.swift */; };
 		402AB83C25DBEBC90044AB00 /* ios_reusables.h in Headers */ = {isa = PBXBuildFile; fileRef = 402AB82E25DBEBC90044AB00 /* ios_reusables.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		407A49EB25DC3DDD00FB20FE /* IORBaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407A49EA25DC3DDD00FB20FE /* IORBaseButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		402AB83425DBEBC90044AB00 /* ios-reusablesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-reusablesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		402AB83925DBEBC90044AB00 /* ios_reusablesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_reusablesTests.swift; sourceTree = "<group>"; };
 		402AB83B25DBEBC90044AB00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		407A49EA25DC3DDD00FB20FE /* IORBaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IORBaseButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		402AB82D25DBEBC90044AB00 /* ios-reusables */ = {
 			isa = PBXGroup;
 			children = (
+				407A49E625DC3CC000FB20FE /* Components */,
 				402AB82E25DBEBC90044AB00 /* ios_reusables.h */,
 				402AB82F25DBEBC90044AB00 /* Info.plist */,
 			);
@@ -84,6 +87,30 @@
 				402AB83B25DBEBC90044AB00 /* Info.plist */,
 			);
 			path = "ios-reusablesTests";
+			sourceTree = "<group>";
+		};
+		407A49E625DC3CC000FB20FE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				407A49E825DC3CFE00FB20FE /* Textfields */,
+				407A49E725DC3CD700FB20FE /* Buttons */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		407A49E725DC3CD700FB20FE /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				407A49EA25DC3DDD00FB20FE /* IORBaseButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		407A49E825DC3CFE00FB20FE /* Textfields */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Textfields;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +174,7 @@
 				TargetAttributes = {
 					402AB82A25DBEBC90044AB00 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1210;
 					};
 					402AB83325DBEBC90044AB00 = {
 						CreatedOnToolsVersion = 12.0;
@@ -194,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407A49EB25DC3DDD00FB20FE /* IORBaseButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +370,7 @@
 		402AB84025DBEBC90044AB00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +386,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "za.co.vision.mkhabela.ios-reusables";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +395,7 @@
 		402AB84125DBEBC90044AB00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -387,6 +419,7 @@
 		402AB84325DBEBC90044AB00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "ios-reusablesTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +437,7 @@
 		402AB84425DBEBC90044AB00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "ios-reusablesTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
